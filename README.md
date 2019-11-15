@@ -3,6 +3,12 @@
 Interrogates a running Apache NiFi instance and makes the following
 information available via a metrics endpoint to a prometheus scraper:
 
+## Usage
+
+```bash
+docker run -v ./config.yml:/etc/nifi_exporter/config.yml:ro nifi_exporter
+```
+
 ## Configuration
 
 The configuration comes from the configuration yaml file passed to the exporter at startup
